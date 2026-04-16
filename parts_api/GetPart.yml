@@ -1,0 +1,19 @@
+info:
+  name: GetPart
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:8080/parts/getPart?partNumber=1a-234
+  params:
+    - name: partNumber
+      value: 1a-234
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
