@@ -1,0 +1,24 @@
+info:
+  name: save part
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8080/parts/savePart
+  body:
+    type: json
+    data: |-
+      {
+        "partNumber": "6a-234",
+        "name": "6a-234: Clutch plate",
+        "description": "Four wheeler clutch plate for 1.0 litre engine",
+        "inStock": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
