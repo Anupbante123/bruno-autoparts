@@ -1,0 +1,22 @@
+info:
+  name: DeletePartsV2
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://localhost:8080/parts/v2
+  body:
+    type: json
+    data: |-
+      [
+      "8a-234",
+      "2b-2343"
+      ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

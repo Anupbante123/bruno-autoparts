@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/parts/searchPart?searchPartNumber=23
+  url: http://localhost:8080/parts/v1/searchPart?searchPartNumber=8a
   params:
     - name: searchPartNumber
-      value: "23"
+      value: 8a
       type: query
   auth: inherit
 
