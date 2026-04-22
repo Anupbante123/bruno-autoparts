@@ -1,0 +1,15 @@
+info:
+  name: GetPartV2
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: http://localhost:8080/parts/v2/1a-234
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
